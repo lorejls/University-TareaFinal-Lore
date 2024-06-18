@@ -1,0 +1,19 @@
+{
+  "name": "demoblaze-cucumber-lore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "cypress": "^13.11.0"
+  },
+  "dependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "esbuild": "^0.21.5"
+  }
+}
