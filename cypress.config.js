@@ -17,10 +17,15 @@ async function setupNodeEvents(on, config) {
 }
 module.exports = defineConfig({
   e2e: {
+    viewportWidth: 1920,
+    viewportHeight: 1080,
     watchForFileChanges: false,
     setupNodeEvents,
     specPattern: "cypress/e2e/features/**/*.feature",
-    baseUrl: "https://www.saucedemo.com",
+    baseUrl: "http://opencart.abstracta.us/",
     chromeWebSecurity: false,
+    inlineAssets: true,
+    saveAllAttempts: false,
   },
 });
+
