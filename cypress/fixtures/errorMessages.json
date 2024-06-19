@@ -1,0 +1,8 @@
+{
+
+    "userNameRequired":"Epic sadface: Username is required",
+    "passwordRequired": "Epic sadface: Password is required",
+    "emailRequired" : "If you already have an account with us, please login at the login page.",
+    "notMatch":"Epic sadface: Username and password do not match any user in this service",
+    "lockedUser": "Epic sadface: Username and password do not match any user in this service"
+  }

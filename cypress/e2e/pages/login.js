@@ -1,13 +1,13 @@
 class LoginPage {
     elements = {
-        usernameInput: () => cy.get('[data-test="username"]'),
-        passwordInput: () => cy.get('[data-test="password"]'),
-        loginButton: () => cy.get('[data-test="login-button"]'),
-        errorMessage: () => cy.get('[data-test="error"]')
+        emailInput: () => cy.get('#input-email'),
+        passwordInput: () => cy.get('#input-password'),
+        loginButton: () => cy.get('[type="submit"]'),
+        errorMessage: () => cy.get('.alert')
     }
   
-    typeUsername(username) {
-        username && this.elements.usernameInput().type(username);
+    typeEmail(email) {
+        email && this.elements.emailInput().type(email);
         return this;
     }
   
@@ -20,8 +20,8 @@ class LoginPage {
         this.elements.loginButton().click();
     }
   
-    login(username, password) {
-        this.typeUsername(username);
+    login(email, password) {
+        this.typeEmail(email);
         this.typePassword(password);
         this.clickLogin();
     }
