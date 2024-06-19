@@ -1,12 +1,13 @@
+@login @regression
 Feature: User Login
 
     Background:
-        Given A user is at the sOpenCart login page
+        Given A user is at the OpenCart login page
 
 
     Scenario: Success Login
         When A user enters the email "b1jnv6d54i@mxscout.com", the password "university1234", and clicks on the login button
-        Then the url will contains the account directory
+        Then The url will contains the account directory
 
 
     Scenario: Incorrect Email Login

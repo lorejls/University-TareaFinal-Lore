@@ -1,13 +1,12 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 
-
 Given('I am on the homepage and the products are visible and available', () => {
     cy.visit('/')
 });
 
 When('I click the "Add to Cart" button', () => {
-    cy.get('#content .product-layout:first-child .button-group button[onclick*="cart.add"]').click();
+  cy.get('.button-group button').first().click();
 });
 
 Then('the product should be added to my cart', () => {
